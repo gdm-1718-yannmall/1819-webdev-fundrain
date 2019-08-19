@@ -1,0 +1,119 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+//@import url('');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html,body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background: #F0F2F4;
+  }
+  .navbar.is-white {
+    background: #F0F2F4;
+  }
+  .navbar-brand {
+    
+    font-size: 1.11rem;
+    font-weight: bold;
+  }
+  
+  #navbar-logo{
+    position: absolute;
+    top: -8px;
+    min-width: 124px;
+    min-height: 55px;
+
+  }
+  .hero-body
+  {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  }
+  .articles {
+    margin: 5rem 0;
+    margin-top: -200px;
+  }
+  .articles .content p {
+      line-height: 1.9;
+      margin: 15px 0;
+  }
+  .author-image {
+      position: absolute;
+      top: -50px;
+      left: 42.5%;
+      width: 15%;
+      border: 3px solid #ccc;
+      border-radius: 50%;
+  }
+  .media-center {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .news {
+    margin-top: 4rem;
+  }
+  .article, .promo-block {
+    margin-top: 6rem;
+  }
+  div.column.is-8:first-child {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .article-title {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 2;
+  }
+  .article-subtitle {
+    color: #909AA0;
+    margin-bottom: 3rem;
+  }
+  .article-body {
+    line-height: 1.4;
+    margin: 0 6rem;
+  }
+  .promo-block .container {
+    margin: 1rem 5rem;
+  }
+
+  a:hover{
+    text-decoration: none;
+    color: #9BCAE5 !important; 
+  }
+
+  .is-active{
+    font-weight: bold;
+    color: #96CEE6 !important;
+  }
+
+  .is-active:hover{
+    font-weight: normal;
+    color: #4A4A4A !important;
+  }
+
+  .hero.is-info {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .card.large {
+    min-height: 620px;
+  }
+
+  .project-description {
+    min-height: 120px;
+    position: relative !important;
+  }
+
+  .button.is-primary {
+    position: absolute !important;
+    bottom: 0 !important;
+  }
