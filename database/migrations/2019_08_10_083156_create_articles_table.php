@@ -20,6 +20,7 @@ class CreateArticlesTable extends Migration
             $table->text('content');
             $table->string('image');
             $table->string('author')->default('Fundrain');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

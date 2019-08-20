@@ -1,4 +1,4 @@
-<nav class="navbar is-fixed-top is-spaced is-transparent" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top is-spaced has-shadow" role="navigation" aria-label="main navigation">
     <div class="container">
         
         <div class="navbar-brand">
@@ -42,6 +42,7 @@
 
                 <div class="navbar-dropdown" aria-labelledby="navbarDropdown">
                     <a class="navbar-item" href="{{ url('/dashboard') }}">Dashboard</a>
+                    <a class="navbar-item" href="">Profile</a>
                     <hr class="navbar-divider">
                     <a class="navbar-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">

@@ -1,9 +1,9 @@
-@extends('layouts.projects')
+@extends('backoffice.layout')
 
 @section('content')
 <section class="column">
     <h1 class="title">Create new project</h1>
-    <form method="POST" action="/projects">
+    <form method="POST" action="/backoffice/projects">
         @csrf
 
         <div class="field">
@@ -26,6 +26,13 @@
                 <input class="input {{ $errors->has('image') ? 'is-danger' : '' }}" name="image" type="text" placeholder="Image Url" value="{{ old('image')}}">
             </div>
         </div>
+
+        <div class="field">
+                <label class="label" for="funds_goal">Funds Goal</label>
+                <div class="control">
+                        <input class="input {{ $errors->has('funds_goal') ? 'is-danger' : '' }}" name="funds_goal" type="number" placeholder="Funds Goal" value="{{ old('funds_goal')}}">
+                    </div>
+                </div>
 
         <div class="field">
                 <label class="label" for="category">Category</label>

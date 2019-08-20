@@ -2,18 +2,22 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Categorie;
 use App\User;
 
 class Project extends Model
 {
+    use SoftDeletes;
+    
     protected $fillable = [
         "name",
         "description",
         "owner_id",
         "image",
-        "categorie_id"
+        "categorie_id",
+        "funds_goal"
     ];
     public function categorie()
     {

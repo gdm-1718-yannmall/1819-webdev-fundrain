@@ -25,6 +25,7 @@ Route::name('pages.')->group(function (){
 
 Route::name('backoffice.')->group(function (){
     Route::get('/dashboard', 'BackofficeController@index')->middleware('auth');
+    
 });
 
 Route::resource('projects', 'projectsController');
@@ -32,8 +33,7 @@ Route::post('/projects/{project}/comments', 'ProjectCommentController@store')->m
 //Route::get('/projects', 'ProjectsController@index');
 // Route::get('/{category}', 'ProjectsController@category');
 
-
-
-
+Route::resource('users', 'UsersController');
+Route::resource('backoffice/projects', 'ProjectsBackofficeController');
 //Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/{page}', 'PagesController@getPage');

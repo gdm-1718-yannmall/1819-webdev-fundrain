@@ -40,7 +40,7 @@
                                     <div class="content project-description">
                                         {{ $project->description }}
                                     </div>
-                                    <div class="button is-info">view project</div>
+                                    <div class="button is-info"><a href="/projects/{{ $project->id }}">view project</a></div>
                                 </div>
                             </div>
                         </div>

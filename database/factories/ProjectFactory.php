@@ -12,5 +12,7 @@ $factory->define(Project::class, function (Faker $faker) {
         'owner_id' => $faker->numberBetween(1, 50),
         'categorie_id' => $faker->numberBetween(1, 9),
         'image' => $faker->imageUrl(640,640),
+        'funds_goal' => $faker->numberBetween(10, 100),
+        'funds_state' => $faker->numberBetween(0, 150)
     ];
 });

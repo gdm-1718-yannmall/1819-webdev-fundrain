@@ -20,7 +20,10 @@ class CreateProjectsTable extends Migration
             $table->string('image')->default('/images/Logo.png');
             $table->unsignedBigInteger('owner_id');
             $table->unsignedBigInteger('categorie_id');
+            $table->integer('funds_goal');
+            $table->integer('funds_state')->default(0);
             $table->timestamps();
+            $table->softDeletes();
 
             $table->foreign('owner_id')->references('id')->on('users');
             $table->foreign('categorie_id')->references('id')->on('categories');
